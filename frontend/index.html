@@ -3,10 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@1,75..100,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/style.css" />
         <title>Recipes</title>
     </head>
     <body>
+        
+        <main>
+            <header>
+                <h1>Food Recipes</h1>
+            </header>
+            <form>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" /><br />
+                <label for="ingredients">Ingredients:</label>
+                <input type="text" id="ingredients" name="ingredients" /><br />
+                
+                <label for="image">Image url:</label>
+                <input type="text" id="image" name="image" />
+                <label for="instructions">Instructions:</label>
+                <input
+                    type="text"
+                    id="instructions"
+                    name="instructions"
+                /><br />
+                <div class="error"></div>
+                <br />
+                <button type="submit" id="btn">Add Recipe</button>
+            </form>
+            <div class="recipes"></div>
+        </main>
+        
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>
